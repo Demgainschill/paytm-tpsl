@@ -1,4 +1,4 @@
-## Paytm-tpsl POC in Bash
+## Paytm-tpsl Bash Poc
 
 Working POC for payments gateway tpsl allowing for verification of user/payer's name based on valid VPA's
 
