@@ -2,11 +2,11 @@
 
 Working POC for payments gateway tpsl allowing for verification of user/payer's name based on valid VPA's
 
-##Requirements 
+## Requirements 
 1. Must have the screen session of firefox-esr be zoomed at "100%"
 2. Must have the inactive alt+tab screen as the payments gateway tpsl.
 
-##Dependency 
+## Dependency 
 1.xdotool
 2.xclip
 
