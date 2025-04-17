@@ -7,9 +7,9 @@
 usage(){
 	cat << EOF
 	usage ./paytm-tpsl [-h|-v|-f]
-		-v : Enter VPA to valid through input
-		-h : help section of the tool
-		-f : List of VPAs to validate from a file provided
+		-v [VPA] : Enter VPA to valid through input (example -v 7204093356@ptyes)
+		-h 	 : help section of the tool
+		-f [file]: List of VPAs to validate from a file provided ( example -f filename)
 EOF
 }
 
@@ -30,6 +30,7 @@ validateVPA(){
 	xdotool click 1
 	xdotool click 1
 	xclip -selection clipboard -o >> VPAnames && echo >> VPAnames
+	xdotool keydown Alt key Tab keyup Alt
 }
 
 while getopts ":hv:f:" OPTS ; do
