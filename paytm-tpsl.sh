@@ -9,7 +9,7 @@ usage(){
 	usage ./paytm-tpsl [-h|-v|-f]
 		-v [VPA] : Enter VPA to valid through input (example -v 7204093356@ptyes)
 		-h 	 : help section of the tool
-		-f [file]: List of VPAs to validate from a file provided ( example -f filename)
+		-f [file]: List of VPAs on each line to validate from a file provided ( example -f filename)
 EOF
 }
 
@@ -43,10 +43,11 @@ while getopts ":hv:f:" OPTS ; do
 			validateVPA $vpa
 			;;
 		f)
-			file="${OPTARG}"
-			if [[ -f $file ]]; then
-				validateVPAlist $file
-			fi
+   echo "to be added"
+			#file="${OPTARG}"
+			#if [[ -f $file ]]; then
+			#	validateVPAlist $file
+			#fi
 			;;
 		\?)
 			echo "Invalid command. Exiting.."
